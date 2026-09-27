@@ -6,7 +6,6 @@
     --text: #f2f5f2;
     --muted: #9aa59d;
     --green: #32e875;
-    --green2: #19b957;
     --border: #243128
 }
 
@@ -27,11 +26,6 @@ body.light header {
 
 body.light .visual {
     background: radial-gradient(circle at 50% 40%, rgba(50, 232, 117, .18), transparent 43%), linear-gradient(145deg, #f7faf6, #e8eee9)
-}
-
-body.light .float {
-    background: rgba(255, 255, 255, .88);
-    color: #48534c
 }
 
 body.light .thumb {
@@ -253,66 +247,6 @@ h1 span {
     overflow: hidden;
     display: grid;
     place-items: center
-}
-
-.ring {
-    width: 220px;
-    height: 220px;
-    border: 1px solid rgba(50, 232, 117, .35);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    box-shadow: 0 0 90px rgba(50, 232, 117, .08)
-}
-
-.ring:before {
-    content: "";
-    position: absolute;
-    width: 145px;
-    height: 145px;
-    border-radius: 50%;
-    background: var(--green);
-    opacity: .08;
-    filter: blur(2px)
-}
-
-.play {
-    width: 78px;
-    height: 78px;
-    border-radius: 24px;
-    background: var(--green);
-    display: grid;
-    place-items: center;
-    color: #071009;
-    font-size: 28px;
-    box-shadow: 0 18px 60px rgba(50, 232, 117, .25);
-    z-index: 1
-}
-
-.float {
-    position: absolute;
-    padding: 9px 12px;
-    border: 1px solid var(--border);
-    background: rgba(14, 19, 16, .88);
-    border-radius: 10px;
-    color: #c6cec8;
-    font-size: 11px
-}
-
-.f1 {
-    top: 32px;
-    right: 30px
-}
-
-.f2 {
-    bottom: 34px;
-    left: 28px
-}
-
-.f3 {
-    bottom: 55px;
-    right: 25px;
-    color: var(--green)
 }
 
 section {
