@@ -1,5 +1,6 @@
 const setTheme = light => {
 	document.body.classList.toggle('light', light);
+	document.querySelector('.mark img').src = light ? 'icon-white.png' : 'icon-black.png';
 	document.getElementById('themeIcon').textContent = light ? '☾' : '☀';
 	document.getElementById('themeToggle').setAttribute(
 		'aria-label',

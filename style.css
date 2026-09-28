@@ -97,8 +97,7 @@ header {
     border-radius: 9px;
     overflow: hidden;
     display: block;
-    box-shadow: 0 0 30px rgba(50, 232, 117, .18);
-    transition: .35s
+    box-shadow: 0 0 30px rgba(50, 232, 117, .18)
 }
 
 .mark img {
@@ -106,18 +105,6 @@ header {
     height: 100%;
     display: block;
     object-fit: cover
-}
-
-.mark img.light-logo {
-    display: none
-}
-
-.light .mark img.dark-logo {
-    display: none
-}
-
-.light .mark img.light-logo {
-    display: block
 }
 
 .navlinks {
