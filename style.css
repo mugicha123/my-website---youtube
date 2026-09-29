@@ -180,9 +180,10 @@ main {
 }
 
 h1 {
-    font-size: 88px;
+    font-size: 64px;
     line-height: .95;
     letter-spacing: -.06em;
+    white-space: nowrap;
     margin: 20px 0 18px
 }
 
@@ -503,7 +504,7 @@ footer {
 
 @media(max-width:560px) {
     h1 {
-        font-size: 56px
+        font-size: 36px
     }
 
     .videos {
@@ -540,7 +541,7 @@ footer {
     }
 
     h1 {
-        font-size: 48px
+        font-size: 30px
     }
 
     .btn {
