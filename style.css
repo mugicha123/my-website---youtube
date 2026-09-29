@@ -180,7 +180,7 @@ main {
 }
 
 h1 {
-    font-size: clamp(54px, 9vw, 105px);
+    font-size: 88px;
     line-height: .95;
     letter-spacing: -.06em;
     margin: 20px 0 18px
@@ -448,20 +448,37 @@ footer {
 }
 
 @media(max-width:760px) {
+    .nav {
+        height: auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px
+    }
+
     .navlinks {
-        display: none
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-size: 13px
     }
 
     .hero {
         grid-template-columns: 1fr;
-        padding-top: 48px
+        min-height: 0;
+        gap: 28px;
+        padding: 48px 0 36px
     }
 
     .visual {
-        min-height: 280px
+        display: none
     }
 
-    .videos,
+    .videos {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
     .about {
         grid-template-columns: 1fr
     }
@@ -479,11 +496,58 @@ footer {
         padding: 0 17px
     }
 
-    h1 {
-        font-size: 64px
-    }
-
     .stats {
         grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+@media(max-width:560px) {
+    h1 {
+        font-size: 56px
+    }
+
+    .videos {
+        grid-template-columns: 1fr
+    }
+
+    .section-head {
+        align-items: flex-start;
+        gap: 12px
+    }
+
+    .section-title {
+        font-size: 25px
+    }
+
+    .muted {
+        white-space: nowrap
+    }
+
+    .cta {
+        padding: 22px
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px
+    }
+}
+
+@media(max-width:380px) {
+    .navlinks {
+        gap: 8px;
+        font-size: 12px
+    }
+
+    h1 {
+        font-size: 48px
+    }
+
+    .btn {
+        padding: 12px 14px
+    }
+
+    .panel {
+        padding: 20px
     }
 }
